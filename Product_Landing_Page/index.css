@@ -1,0 +1,287 @@
+/* This is designed to closely emulate the template project provided and was completed as part of the Responsive Web Design curriculum from freeCodeCamp. https://product-landing-page.freecodecamp.rocks/ */
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFF2BB;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EFF2BB;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    height: 15vh;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        margin-top: 10px;
+        position: relative;
+    }
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .logo>img {
+        margin: auto;
+    }
+}
+
+nav {
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    nav {
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav li {
+        padding-bottom: 10px;
+    }
+}
+
+nav>ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: right;
+    padding: auto 50px;
+}
+
+@media (max-width: 650px) {
+    nav>ul {
+        flex-direction: column;
+    }
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: ccenter;
+    text-align: center;
+    height: 200px;
+    margin-top: 150px;
+}
+
+#hero>h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding-right: 150px;
+    border: 0;
+    background-color: #F48D24;
+    color: white;
+}
+
+#hero input[type='submit'] hover {
+    background-color: brown;
+    transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+    #hero {
+        margin-top: 250px;
+    }
+}
+
+#features {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.desc {
+    padding: 20px;
+}
+
+
+@media (max-width: 700px) {
+    #features .desc {
+        width: 80vw;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    #features {
+        margin-top: 0;
+    }
+}
+
+#video {
+    margin: 30px 80px;
+    height: 400px;
+    width: 700px;
+}
+
+@media (max-width: 700px) {
+    #video {
+        margin: 5px;
+        width: 100%;
+    }
+}
+
+#our-strains {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#cultivate {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    border: 1px solid #5A122D;
+    margin: 10px;
+    border-radius: 3px
+}
+
+.product>.type {
+    background-color: #F48D24;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product>h2 {
+    margin-top: 15px;
+}
+
+.product>ol {
+    margin: 15px 0;
+}
+
+.product>ol>li {
+    padding: 5px 0;
+}
+
+.product>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #5A122D;
+    color: white
+}
+
+@media (max-width: 700px) {
+    #cultivate {
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin: 30px;
+    padding: 20px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer>ul>li {
+    padding: 0 10px;
+}

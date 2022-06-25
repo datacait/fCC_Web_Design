@@ -1,0 +1,77 @@
+<!--This is designed and intended to closely emulate the sample provded: https://technical-documentation-page.freecodecamp.rocks/-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CSS Quick Overview</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Syntax">Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Selectors">Selectors</a>
+            </li>
+            <li><a class="nav-link" href="#Properties">Properties</a></li>
+            <li><a class="nav-link" href="#Media">Media</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>CSS is a language for stylizing, arranging, and formatting websites and applications built using HTML and
+                Java.</p>
+            <p>This highly powerful and adaptable language is responsible for creating responsive web designs.</p>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>CSS is comprised of <strong>selectors</strong> and <strong>declarations</strong>. Selectors provide the
+                information about which elements are being modified. Declarations dictate which modifications should be
+                made. <strong>Properties</strong> and <strong>values</strong> are the pieces of declarations.</p>
+            <code id="example">h1 { <br>
+          font-family: sans-serif; <br>
+          font-size: 16px;<br>
+        }
+        </code>
+            <p>In the code above <code>h1</code> is the selector which indicates that all <code>h1</code> elements
+                should receive the declaration. The declaration indicates <code>sans-serif</code> for the
+                <code>font-family</code> property and <code>16px</code> for the <code>font-size</code> property.</p>
+        </section>
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <p>Selectors specify the HTML elements that are being styled. This could include the entire page, a certain
+                section, or even a certain word on the page.</p>
+            <p>Selectors can include elements, classes, id values, etc. Multiple different elements can be combined in
+                one selector and selectors can be designed to specify only the desired nested elements within a parent
+                element.</p>
+        </section>
+        <section class="main-section" id="Properties">
+            <header>Properties</header>
+            <p>Properties include an expansive list of the different things that can be styled with CSS. For example:
+            </p>
+            <ul>
+                <li>Color</li>
+                <li>Text</li>
+                <li>Display</li>
+                <li>Box Method (padding, spacing, etc.)</li>
+                <li>Layouts</li>
+            </ul>
+            <p>Properties allow full customization of the web content.</p>
+        </section>
+        <section class="main-section" id="Media">
+            <header>Media</header>
+            <p>Media queries allow the web content to display according to the individual screen size of the device
+                being used to view the site.</p>
+            <p>CSS also has features to design animations. Attributes of the animation including length of animation,
+                timing of animation, and actions within the animation can all be modified.
+
+        </section>
+    </main>
+</body>
+
+</html>
